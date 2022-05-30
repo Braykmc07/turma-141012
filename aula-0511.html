@@ -18,12 +18,12 @@
     <div class="wrapper">
       <div id="menubar">
         <ul>
-          <li class="item-menu" onclick="onstyle (0)">Folha de estilo 1</li>
-          <li class="item-menu" onclick="onstyle (1)">Folha de estilo 2</li>
-          <li class="item-menu" onclick="onstyle (2)">Folha de estilo 3</li>
-          <li class="item-menu" onclick="onstyle (3)">Folha de estilo 4</li>
-          <li class="item-menu" onclick="nostyle (4)">folha de estilo 5</li>
-          <li class="item-menu" onclick="nostyle (5)">sem folha de estilos</li>
+          <li class="item-menu"onclick="onstyle (0)">Folha de estilo 1</li>
+          <li class="item-menu"onclick="onstyle (1)">Folha de estilo 2</li>
+          <li class="item-menu"onclick="onstyle (2)">Folha de estilo 3</li>
+          <li class="item-menu"onclick="onstyle (3)">Folha de estilo 4</li>
+          <li class="item-menu"onclick="nostyle (4)">folha de estilo 5</li>
+          <li class="item-menu"onclick="nostyle (5)">sem folha de estilos</li>
         </ul>
       </div>
       <div id="main">
@@ -32,7 +32,7 @@
           Esta é uma demonstração de como diferentes folhas de estilo podem
           alterar o layout de sua página HTML. Você pode alterar o layout desta
           página selecionando diferentes folhas de estilo no menu ou
-          selecionando um dos seguintes links:
+          selecionando um dos seguintes links: 
           <a onclick="onstyle (0)" href="#">stylesheet1</a>,
           <a onclick="onstyle (1)" href="#">Stylesheet2</a>,
           <a onclick="onstyle (2)" href="#"> Stylesheet3</a> ,
@@ -44,9 +44,7 @@
         <p>
           Esta página usa elementos DIV para agrupar diferentes seções da
           página<br />
-          HTML. Clique aqui para ver como fica a página sem folha de estilo:<br /><a
-            href="sem folha de estilo."
-          ></a>
+          HTML. Clique aqui para ver como fica a página sem folha de estilo:<br><a href="sem folha de estilo."></a>
         </p>
       </div>
       <div id="sidebar">
@@ -70,20 +68,27 @@
       </p>
     </div>
     <script>
-      function nostyle(n) {
-        document.styleSheets[0].disabled = true;
-        document.styleSheets[1].disabled = true;
-        document.styleSheets[2].disabled = true;
-        document.styleSheets[3].disabled = true;
-        document.styleSheets[4].disabled = true;
-      }
+function nostyle(n){
+  document.styleSheets[0].disabled = true;
+  document.styleSheets[1].disabled = true;
+  document.styleSheets[2].disabled = true;
+  document.styleSheets[3].disabled = true;
+  document.styleSheets[4].disabled = true;
 
-      function onstyle(m) {
-        nostyle(1);
-        document.styleSheets[m].disabled = false;
-      }
+}
 
-      nostyle(0);
+ function onstyle(m){
+  nostyle();
+document.styleSheets[m].disabled = false;
+}
+
+nostyle(0);
+
+
+
+
+
+
     </script>
   </body>
 </html>
