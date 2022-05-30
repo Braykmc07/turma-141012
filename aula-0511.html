@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style02.css" />
     <link rel="stylesheet" href="css/style03.css" />
     <link rel="stylesheet" href="css/style04.css" />
+    <link rel="stylesheet" href="css/style05.css" />
   </head>
 
   <body>
@@ -66,7 +67,7 @@
       </p>
     </div>
     <script>
-function nostyle(m){
+function nostyle(n){
   document.styleSheets[0].disabled = true;
   document.styleSheets[1].disabled = true;
   document.styleSheets[2].disabled = true;
@@ -75,7 +76,7 @@ function nostyle(m){
 
 }
 
- function onstyle(n){
+ function onstyle(m){
   nostyle();
 document.styleSheets[m].disabled = false;
 }
