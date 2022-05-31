@@ -68,7 +68,7 @@
       </p>
     </div>
     <script>
-function nostyle(m){
+function nostyle(){
   document.styleSheets[0].disabled = true;
   document.styleSheets[1].disabled = true;
   document.styleSheets[2].disabled = true;
@@ -77,12 +77,12 @@ function nostyle(m){
 
 }
 
- function: onstyle (n){
+ function onstyle (n){
   nostyle();
 document.styleSheets[n].disabled = false;
 }
 
-nostyle(0);
+onstyle(0);
 
 
 
